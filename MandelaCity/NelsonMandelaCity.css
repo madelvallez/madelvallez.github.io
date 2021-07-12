@@ -1,0 +1,113 @@
+h1{
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 0 black;
+}
+/*IMAGES*/
+
+.Park1 {
+	width: auto;
+	height: 220px;
+	margin: 10px;
+}
+
+.Park2 {
+	width: auto;
+	height: 200px;
+	margin: 10px;
+}
+
+.divBlock { 
+    display: inline-flex ;
+	width: 100% ;
+}
+
+.backgd1{
+	background-color: #63B8FF;
+	margin:5px;
+}
+
+.backgd2{
+	background-color: #00CED1;	/*00CED1*/
+	margin: 5px;
+	
+}
+
+body{
+	background-color:#27408B
+}	
+
+.imgFloat {
+	width: auto;
+	height: 150px;
+	float: left;
+	margin:10px;
+}
+
+.imgNorm {
+	width: auto;
+	height: 150px;
+	margin:10px;
+}
+
+p, h2, h3 {
+	margin-left: 5px
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+a {
+	color: #00eaff;
+}
+
+h2 {
+	margin-top: 10px
+}
+
+header {
+	background-image: url("images/Tourisme-en-Afrique-du-Sud.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 900px;
+	background-color: #27408B;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+header ul{
+	text-align: center;
+	padding-left: 0;
+}
+
+ header ul li{
+	display:inline;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+ header ul li a{
+	color: white;
+	text-shadow: 2px 2px 0 black;
+	text-decoration: none;
+}
+
+.corps{
+    padding-top: 110px;
+}
+
+.margeAncre{
+	padding-top: 120px;
+	position: relative;
+	top: -120px;
+	margin-bottom: -120px;
+	z-index: -1;
+}
+
+p,li {
+	font-size: 14pt;
+}

@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Où en est-tu dans ta lecture?</title>
+		<script type="text/javascript" src="js-accueil.js"></script>
+
+	</head>
+	<body>
+		<h1>Où en est-tu dans ta lecture?</h1>
+		<br/>
+		<form method="get" onClick="resu()">
+			Emile ou de l'éducation, Rousseau: 
+			<input type="number" min="0" max="300" id="stadeEmile" name="stadeEmile"/>
+			/389
+			</br>
+			Comtes, Andersen: 
+			<input type="number" min="0" id="stadeAndersen" name="stadeAndersen"/>
+			/442
+			</br>
+			Aké, les années d'enfance, Soyinka: 
+			<input type="number" min="0" id="stadeAke" name="stadeAke"/>
+			/449
+			</br>
+			<input type="date" id="jour" name="jour"/>
+			</br>
+			<input type="button" value="Valider" onclick="javascript:resu()"/>
+		</form>
+		
+		<p> Pages à lire: <span id="A-lire"> </span> /1280</p>
+		<p> Pages par jour: <span id="LireParJour"> </span> pages/jour </p>
+	</body>
+</html>

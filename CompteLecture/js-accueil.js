@@ -8,7 +8,7 @@ function resu() {
 	var date = document.getElementById("jour").valueAsDate;
 	if ( date === null ) { 
             date = new Date();
-            date.setHours(0, 0, 0, 0);
+            date.setUTCHours(0, 0, 0, 0);
             document.getElementById("jour").valueAsDate=date;
         }
 	

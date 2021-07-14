@@ -21,6 +21,7 @@ function resu() {
 	var vitesse = pages / temps ;
 	
 	document.getElementById("A-lire").innerHTML=pages ;
+	document.getElementById("EnJour").innerHTML=temps ;
 	document.getElementById("LireParJour").innerHTML=vitesse.toFixed(2) ;
 	
 }

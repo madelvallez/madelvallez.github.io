@@ -11,7 +11,7 @@
 	<body>
 		<h1>Où en est-tu dans ta lecture?</h1>
 		<br/>
-		<form method="get" onClick="resu()">
+		<form>
 			<label for="stadeEmile">Emile ou de l'éducation, Rousseau: </label> 
 			<span><input type="number" min="0" max="389" id="stadeEmile" name="stadeEmile"/> / 389 </span>
 			
@@ -24,7 +24,7 @@
 			<label for="jour">Prochain jour de lecture: </label> 
 			<span><input type="date" id="jour" name="jour"/> </span>
 			
-			<span><input type="button" value="Valider" onclick="javascript:resu()"/> </span>
+			<span><input type="button" value="Calculer" onclick="javascript:resu()"/> </span>
 		</form>
 		
 		<p> Pages à lire: <span id="A-lire">...</span> / 1280</p>

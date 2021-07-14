@@ -6,6 +6,13 @@ form span {
 	display: block;
 	margin-left: 250px;
 }
+p {
+	margin: 0
+}
+input[type="button"] {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
 
 @media only screen and (max-width:459px) { 
 	form label {

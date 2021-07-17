@@ -1,14 +1,13 @@
 /*styles*/
 form .label {
 	float: left;
+	margin-top: 4px;
 }
-form span.field {
+form .field {
 	display: block;
 	margin-left: 250px;
-}
-input[type="button"] {
-	margin-top: 8px;
-	margin-bottom: 8px;
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 .result .label {
 	margin: 0;
@@ -27,7 +26,7 @@ input[type="button"] {
 	form .label {
 		float:inherit;
 	}
-	form span.field { 
+	form .field { 
 	  margin-left : 30px;
 	  }
 }

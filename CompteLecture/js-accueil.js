@@ -14,8 +14,8 @@ function resu() {
 	var date_fin = document.getElementById("dernier").valueAsDate;
 	if ( date_fin === null ) { 
 		date_fin = new Date("2021-08-29");
-		date.setUTCHours(0, 0, 0, 0);
-		document.getElementById("dernier").valueAsDate=date;
+		date_fin.setUTCHours(0, 0, 0, 0);
+		document.getElementById("dernier").valueAsDate=date_fin;
 	}
 	
 	var diff = date_fin.getTime() - date.getTime();

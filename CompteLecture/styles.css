@@ -1,8 +1,8 @@
 /*styles*/
-form label {
+form .label {
 	float: left;
 }
-form span.col2 {
+form span.field {
 	display: block;
 	margin-left: 250px;
 }
@@ -10,11 +10,11 @@ input[type="button"] {
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
-.result .col1 {
+.result .label {
 	margin: 0;
 	float: left;	
 }
-.result .col2 {
+.result .field {
 	margin: 0;
  	display: block;
 	margin-left: 110px;
@@ -24,10 +24,10 @@ input[type="button"] {
 }
 
 @media only screen and (max-width:459px) { 
-	form label {
+	form .label {
 		float:inherit;
 	}
-	form span.col2 { 
+	form span.field { 
 	  margin-left : 30px;
 	  }
 }

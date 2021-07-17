@@ -13,6 +13,15 @@ input[type="button"] {
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
+.result .col1 {
+	margin: 0;
+	float: left;	
+}
+.result .col2 {
+	margin: 0;
+ 	display: block;
+	margin-left: 110px;
+}
 
 @media only screen and (max-width:459px) { 
 	form label {

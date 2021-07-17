@@ -11,8 +11,13 @@ function resu() {
 		date.setUTCHours(0, 0, 0, 0);
 		document.getElementById("jour").valueAsDate=date;
 	}
+	var date_fin = document.getElementById("dernier").valueAsDate;
+	if ( date_fin === null ) { 
+		date_fin = new Date("2021-08-29");
+		date.setUTCHours(0, 0, 0, 0);
+		document.getElementById("dernier").valueAsDate=date;
+	}
 	
-	var date_fin = new Date("2021-08-29");
 	var diff = date_fin.getTime() - date.getTime();
 	var temps = diff / (1000 * 3600 * 24); 
 	

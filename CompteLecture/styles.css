@@ -2,12 +2,9 @@
 form label {
 	float: left;
 }
-form span {
+form span.col2 {
 	display: block;
 	margin-left: 250px;
-}
-p {
-	margin: 0;
 }
 input[type="button"] {
 	margin-top: 8px;
@@ -30,7 +27,7 @@ input[type="button"] {
 	form label {
 		float:inherit;
 	}
-  form span { 
+  form span.col2 { 
 	  margin-left : 30px;
 	  }
 }

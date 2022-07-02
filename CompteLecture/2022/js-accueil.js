@@ -58,6 +58,7 @@ function resu() {
 	var nb_l5 = l5 - min_l5;
 	var nb_l6 = l6 - min_l6;
 	
+	// max encore en dur ...
 	var pages = 745 - (nb_l1 + nb_l2 + nb_l3 + nb_l4 + nb_l5 + nb_l6) ;
 	
 	var vitesse = pages / temps ;

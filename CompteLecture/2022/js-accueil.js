@@ -1,20 +1,39 @@
-//livre1 : id html
+//Livre1 : id html
+//livre1 : elem html du Livre1
 //l1: nb de page lu entré par util
 
 
 function resu() {
-	var l1 = parseInt(document.getElementById("Livre1").value);
-	l1 = isNaN(l1) ? 0 : l1;
-	var l2 = parseInt(document.getElementById("Livre2").value);
-	l2 = isNaN(l2) ? 0 : l2;
-	var l3 = parseInt(document.getElementById("Livre3").value);
-	l3 = isNaN(l3) ? 0 : l3;
-	var l4 = parseInt(document.getElementById("Livre4").value);
-	l4 = isNaN(l4) ? 0 : l4;
-	var l5 = parseInt(document.getElementById("Livre5").value);
-	l5 = isNaN(l5) ? 0 : l5;
-	var l6 = parseInt(document.getElementById("Livre6").value);
-	l6 = isNaN(l6) ? 0 : l6;
+	var livre1 = document.getElementById("Livre1");
+	var l1 = parseInt(livre1.value);
+	var min_l1 = parseInt(livre1.getAttribute("min"));
+	l1 = isNaN(l1) ? min_l1 : l1;
+
+	var livre2 = document.getElementById("Livre2");
+	var l2 = parseInt(livre2.value);
+	var min_l2 = parseInt(livre2.getAttribute("min"));
+	l2 = isNaN(l2) ? 49 : l2;
+
+	var livre3 = document.getElementById("Livre3");
+	var l3 = parseInt(livre3.value);
+	var min_l3 = parseInt(livre3.getAttribute("min"));
+	l3 = isNaN(l3) ? min_l3 : l3;
+
+	var livre4 = document.getElementById("Livre4");
+	var l4 = parseInt(livre4.value);
+	var min_l4 = parseInt(livre4.getAttribute("min"));
+	l4 = isNaN(l4) ? min_l4 : l4;
+
+	var livre5 = document.getElementById("Livre5");
+	var l5 = parseInt(livre5.value);
+	var min_l5 = parseInt(livre5.getAttribute("min"));
+	l5 = isNaN(l5) ? min_l5 : l5;
+
+	var livre6 = document.getElementById("Livre6");
+	var l6 = parseInt(livre6.value);
+	var min_l6 = parseInt(livre6.getAttribute("min"));
+	l6 = isNaN(l6) ? min_l6 : l6;
+
 
 	var date = document.getElementById("jour").valueAsDate;
 	if ( date === null ) { 
@@ -31,8 +50,15 @@ function resu() {
 	
 	var diff = date_fin.getTime() - date.getTime();
 	var temps = diff / (1000 * 3600 * 24); 
+
+	var nb_l1 = l1 - min_l1;
+	var nb_l2 = l2 - min_l2;
+	var nb_l3 = l3 - min_l3;
+	var nb_l4 = l4 - min_l4;
+	var nb_l5 = l5 - min_l5;
+	var nb_l6 = l6 - min_l6;
 	
-	var pages = 745 - (l1 + l2 + l3 + l4 + l5 + l6) ;
+	var pages = 745 - (nb_l1 + nb_l2 + nb_l3 + nb_l4 + nb_l5 + nb_l6) ;
 	
 	var vitesse = pages / temps ;
 	

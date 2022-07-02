@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="text/javascript" src="js-accueil.js"></script>
-		<link rel="stylesheet" type="text/css" href="styles.css"/>
-		<title>Où en es-tu dans ta lecture?</title>
-	</head>
-	<body>
-		<h1>Où en es-tu dans ta lecture?</h1>
-		<form>
-			<label class="label" for="stadeEmile">Emile ou de l'éducation, Rousseau : </label> 
-			<span class="field"><input type="number" min="0" max="389" id="stadeEmile" name="stadeEmile"/><span class="note"> / 389</span></span>
-			<label class="label" for="stadeAndersen">Comtes, Andersen : </label> 
-			<span class="field"><input type="number" min="0" max="442" id="stadeAndersen" name="stadeAndersen"/><span class="note"> / 442</span></span>
-			<label class="label" for="stadeAke">Aké, les années d'enfance, Soyinka : </label> 
-			<span class="field"><input type="number" min="0" max="449" id="stadeAke" name="stadeAke"/><span class="note"> / 449</span></span>
-			<label class="label" for="jour">Prochain jour de lecture : </label> 
-			<span class="field"><input type="date" id="jour" name="jour"/> </span>
-			<label class="label" for="dernier">Dernier jour de lecture : </label> 
-			<span class="field"><input type="date" id="dernier" name="dernier" value="2021-08-29"/> </span>
-			<span class="field"><input type="button" value="Calculer" onclick="javascript:resu()"/> </span>
-		</form>
-		<div class="result">
-			<span class="label">Pages à lire : </span><span class="field"><span id="A-lire">...</span><span class="note"> / 1280</span></span>
-			<span class="label">Jours restants : </span><span class="field"><span id="EnJour">...</span></span>
-			<span class="label">Pages par jour : </span><span class="field"><span id="LireParJour">...</span></span>
-		</div>
-	</body>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js-accueil.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <title>Où en es-tu dans ta lecture?</title>
+    </head>
+    <body>
+        <h1>Où en es-tu dans ta lecture?</h1>
+        <form>
+            <label class="label" for="Livre1">Géorgiques, Virgile : </label> 
+            <span class="field"><input type="number" min="0" max="389" id="Livre1" name="Livre1"/><span class="note"> / 389???</span></span>
+            <label class="label" for="Livre2">La condition ouvrière, Simone Weil 49-76 : </label> 
+            <span class="field"><input type="number" min="0" max="28" id="Livre2" name="Livre2"/><span class="note"> / 28</span></span>
+            <label class="label" for="Livre3">La condition ouvrière, Simone Weil 205-351 : </label> 
+            <span class="field"><input type="number" min="0" max="147" id="Livre3" name="Livre3"/><span class="note"> / 147</span></span>
+            <label class="label" for="Livre4">La condition ouvrière, Simone Weil 389-397 : </label> 
+            <span class="field"><input type="number" min="0" max="9" id="Livre4" name="Livre4"/><span class="note"> / 9</span></span>
+            <label class="label" for="Livre5">La condition ouvrière, Simone Weil 418-434 : </label> 
+            <span class="field"><input type="number" min="0" max="17" id="Livre5" name="Livre5"/><span class="note"> / 17</span></span>
+            <label class="label" for="Livre6">Par-dessus bord, Michel Vinaver : </label> 
+            <span class="field"><input type="number" min="0" max="449" id="Livre6" name="Livre6"/><span class="note"> / 449???</span></span>
+            <label class="label" for="jour">Prochain jour de lecture : </label> 
+            <span class="field"><input type="date" id="jour" name="jour"/> </span>
+            <label class="label" for="dernier">Dernier jour de lecture : </label> 
+            <span class="field"><input type="date" id="dernier" name="dernier" value="2022-08-26"/> </span>
+            <span class="field"><input type="button" value="Calculer" onclick="javascript:resu()"/> </span>
+        </form>
+        <div class="result">
+            <span class="label">Pages à lire : </span><span class="field"><span id="A-lire">...</span><span class="note"> / 1280</span></span>
+            <span class="label">Jours restants : </span><span class="field"><span id="EnJour">...</span></span>
+            <span class="label">Pages par jour : </span><span class="field"><span id="LireParJour">...</span></span>
+        </div>
+    </body>
 </html>

@@ -32,7 +32,7 @@ function resu() {
 	var diff = date_fin.getTime() - date.getTime();
 	var temps = diff / (1000 * 3600 * 24); 
 	
-	var pages = 1280 - (l1 + l2 + l3 + l4 + l5 + l6) ;
+	var pages = 745 - (l1 + l2 + l3 + l4 + l5 + l6) ;
 	
 	var vitesse = pages / temps ;
 	

@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <title>Où en es-tu dans ta lecture?</title>
     </head>
-    <body>
+    <body onload="initMinMax();">
         <h1>Où en es-tu dans ta lecture?</h1>
         <form>
             <label class="label" for="Livre1">Géorgiques, Virgile : </label> 
@@ -29,7 +29,7 @@
             <span class="field"><input type="button" value="Calculer" onclick="javascript:resu()"/> </span>
         </form>
         <div class="result">
-            <span class="label">Pages à lire : </span><span class="field"><span id="A-lire">...</span><span class="note"> / 745</span></span>
+            <span class="label">Pages à lire : </span><span class="field"><span id="A-lire">...</span><span class="note" id="total"> / 745</span></span>
             <span class="label">Jours restants : </span><span class="field"><span id="EnJour">...</span></span>
             <span class="label">Pages par jour : </span><span class="field"><span id="LireParJour">...</span></span>
         </div>

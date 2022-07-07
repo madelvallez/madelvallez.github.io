@@ -2,6 +2,25 @@
 //livre1 : elem html du Livre1
 //l1: nb de page lu entré par util
 
+function initMinMax() {
+	var pagesTotal = 0;
+	var inputNumberList = document.querySelectorAll("span.field input[type=number]");
+	for ( var inputElt of inputNumberList) {
+		var minVal = inputElt.min;
+		var maxVal = inputElt.max;
+		var minStr = isNaN(minVal) ? "ND 0" : minVal;
+		var minVal = isNaN(minVal) ? 0 : minVal;
+		var maxStr = isNaN(maxVal) ? "ND ERR" : maxVal;
+		var maxVal = isNaN(maxVal) ? undefined : maxVal;
+		var noteElt = inputElt.parentElement.querySelector("span.note");
+		noteElt.innerText = " min: "+minStr+" - max: "+maxStr;
+		if ( maxVal != undefined ) {
+			pagesTotal += maxVal - minVal + 1 ;
+		}
+	}
+	var totalElt = document.getElementById("total");
+	totalElt.innerText = " / "+ pagesTotal;
+}
 
 function resu() {
 	var livre1 = document.getElementById("Livre1");

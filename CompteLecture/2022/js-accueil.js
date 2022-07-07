@@ -6,10 +6,10 @@ function initMinMax() {
 	var pagesTotal = 0;
 	var inputNumberList = document.querySelectorAll("span.field input[type=number]");
 	for ( var inputElt of inputNumberList) {
-		var minVal = inputElt.min;
-		var maxVal = inputElt.max;
-		var minStr = isNaN(minVal) ? "ND 0" : minVal;
-		var minVal = isNaN(minVal) ? 0 : minVal;
+		var minVal = parseInt(inputElt.min);
+		var maxVal = parseInt(inputElt.max);
+		var minStr = isNaN(minVal) ? "ND 1" : minVal;
+		var minVal = isNaN(minVal) ? 1 : minVal;
 		var maxStr = isNaN(maxVal) ? "ND ERR" : maxVal;
 		var maxVal = isNaN(maxVal) ? undefined : maxVal;
 		var noteElt = inputElt.parentElement.querySelector("span.note");
@@ -44,10 +44,10 @@ function resu() {
 	// calculate read pages and total pages to read
 	var inputNumberList = document.querySelectorAll("span.field input[type=number]");
 	for ( var inputElt of inputNumberList) {
-		var minVal = inputElt.min;
-		var maxVal = inputElt.max;
-		var page = inputElt.value;
-		var minVal = isNaN(minVal) ? 0 : minVal;
+		var minVal = parseInt(inputElt.min);
+		var maxVal = parseInt(inputElt.max);
+		var page = parseInt(inputElt.value);
+		var minVal = isNaN(minVal) ? 1 : minVal;
 		var maxVal = isNaN(maxVal) ? undefined : maxVal;
 		var page = isNaN(page) ? minVal - 1 : page;
 		if ( maxVal != undefined ) {

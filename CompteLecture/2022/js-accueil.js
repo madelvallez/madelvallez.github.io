@@ -14,8 +14,9 @@ function initMinMax() {
 		var maxVal = isNaN(maxVal) ? undefined : maxVal;
 		var noteElt = inputElt.parentElement.querySelector("span.note");
 		noteElt.innerText = " min: "+minStr+" - max: "+maxStr;
-		if ( maxVal != undefined ) {
-			pagesTotal += maxVal - minVal + 1 ;
+		if ( maxVal != undefined ) {	
+			//maj pagesTotal
+			pagesTotal += maxVal - minVal + 1 ; 
 		}
 	}
 	var totalElt = document.getElementById("total");

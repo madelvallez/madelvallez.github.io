@@ -43,11 +43,12 @@ function resu() {
 	// calculate read pages and total pages to read
 	var inputNumberList = document.querySelectorAll("span.field input[type=number]");
 	for ( var inputElt of inputNumberList) {
-		var page = inputElt.value;
 		var minVal = inputElt.min;
 		var maxVal = inputElt.max;
+		var page = inputElt.value;
 		var minVal = isNaN(minVal) ? 0 : minVal;
 		var maxVal = isNaN(maxVal) ? undefined : maxVal;
+		var page = isNaN(page) ? minVal - 1 : page;
 		if ( maxVal != undefined ) {
 			pagesLues += page - minVal + 1 ;
 			pagesTotal += maxVal - minVal + 1 ;
@@ -58,6 +59,7 @@ function resu() {
 
 	// calculate duration
 	var diff = date_fin.getTime() - date.getTime();
+	// convert ms to days
 	var temps = diff / (1000 * 3600 * 24); 
 	
 	// calculate pages to read

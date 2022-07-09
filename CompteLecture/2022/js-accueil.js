@@ -20,7 +20,7 @@ function initMinMax() {
 		}
 	}
 	var totalElt = document.getElementById("total");
-	totalElt.innerText = " / "+ pagesTotal;
+	totalElt.innerText = pagesTotal;
 }
 
 function resu() {
@@ -44,6 +44,7 @@ function resu() {
 	// calculate read pages and total pages to read
 	var inputNumberList = document.querySelectorAll("span.field input[type=number]");
 	for ( var inputElt of inputNumberList) {
+		var ident = inputElt.id;
 		var minVal = parseInt(inputElt.min);
 		var maxVal = parseInt(inputElt.max);
 		var page = parseInt(inputElt.value);
@@ -54,7 +55,7 @@ function resu() {
 			pagesLues += page - minVal + 1 ;
 			pagesTotal += maxVal - minVal + 1 ;
 		} else {
-			errorMsg = "Attention : Calcul INCOMPLET !!!";
+			errorMsg = "Attention : Calcul INCOMPLET ("+ident+") !!!";
 		}
 	}
 

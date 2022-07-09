@@ -3,9 +3,11 @@
 //l1: nb de page lu entré par util
 
 function initMinMax() {
+	var errorMsg = "";
 	var pagesTotal = 0;
 	var inputNumberList = document.querySelectorAll("span.field input[type=number]");
 	for ( var inputElt of inputNumberList) {
+		var ident = inputElt.id;
 		var minVal = parseInt(inputElt.min);
 		var maxVal = parseInt(inputElt.max);
 		var minStr = isNaN(minVal) ? "ND 1" : minVal;
@@ -17,10 +19,13 @@ function initMinMax() {
 		if ( maxVal != undefined ) {	
 			//maj pagesTotal
 			pagesTotal += maxVal - minVal + 1 ; 
+		} else {
+			errorMsg = "Attention : valeur MANQUANTE ("+ident+") !!!";
 		}
 	}
 	var totalElt = document.getElementById("total");
 	totalElt.innerText = pagesTotal;
+	document.getElementById("Message").innerHTML=errorMsg;
 }
 
 function resu() {
